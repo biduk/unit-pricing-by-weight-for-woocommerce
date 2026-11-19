@@ -1,5 +1,5 @@
-=== Biduk Price per Weight for WooCommerce ===
-Stable tag: 4.1.2
+=== Unit Pricing by Weight for WooCommerce ===
+Stable tag: 4.1.3
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Requires at least: 6.5
