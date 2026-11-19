@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Biduk Price per Weight for WooCommerce
+ * Plugin Name: Unit Pricing by Weight for WooCommerce
  * Description: Displays catalog prices per unit of weight and filters classic WooCommerce product archives by unit price.
- * Version: 4.1.2
+ * Version: 4.1.3
  * Author: biduk
  * License: GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -142,9 +142,9 @@ function index_key(): string {
 
 function unit_price(\WC_Product $product): ?float {
     if ($product->is_type('variable')) {
-         * Plugin Name: Unit Pricing by Weight for WooCommerce
+        $lowest = null;
         foreach ($product->get_available_variations('objects') as $variation) {
-             * Version: 4.1.3
+            $value = unit_price($variation);
             if ($value !== null && ($lowest === null || $value < $lowest)) {
                 $lowest = $value;
             }
