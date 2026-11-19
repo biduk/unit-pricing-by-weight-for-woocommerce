@@ -1,4 +1,4 @@
-# Biduk Price per Weight for WooCommerce
+# Unit Pricing by Weight for WooCommerce
 
 Show shoppers the price per unit of weight and let them compare products using a sidebar filter.
 
@@ -13,7 +13,7 @@ Show shoppers the price per unit of weight and let them compare products using a
 ## Installation
 
 1. In WordPress, go to **Plugins → Add New Plugin → Upload Plugin**.
-2. Upload `biduk-price-per-weight-4.1.2.zip` and activate it.
+2. Upload `unit-pricing-by-weight-for-woocommerce-4.1.3.zip` and activate it. If version 4.1.2 is active, deactivate it before activating the renamed plugin.
 3. Open **WooCommerce → Price per Weight** to choose the display unit and category visibility. The page also links to the WooCommerce settings for store currency and product weight units.
 4. Allow WP-Cron to finish indexing existing products before relying on the filter.
 
@@ -23,10 +23,9 @@ Requires WordPress 6.5 or later, PHP 7.4 or later, and WooCommerce. The sidebar 
 
 Unit prices use the catalog price in the store currency. Customer-specific taxes, checkout discounts, and currency conversion are outside the filter’s scope.
 
-## Version 4.1.2
+## Version 4.1.3
 
-- Added the current currency symbol and display unit to both filter labels.
-- Fixed the **WooCommerce → Price per Weight** menu link.
+- Renamed the plugin and its installation package. Existing settings are reused.
 
 ## License
 
