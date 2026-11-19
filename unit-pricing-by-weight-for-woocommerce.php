@@ -142,9 +142,9 @@ function index_key(): string {
 
 function unit_price(\WC_Product $product): ?float {
     if ($product->is_type('variable')) {
-        $lowest = null;
+         * Plugin Name: Unit Pricing by Weight for WooCommerce
         foreach ($product->get_available_variations('objects') as $variation) {
-            $value = unit_price($variation);
+             * Version: 4.1.3
             if ($value !== null && ($lowest === null || $value < $lowest)) {
                 $lowest = $value;
             }
